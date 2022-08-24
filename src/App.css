@@ -1,4 +1,5 @@
 .App {
+  justify-content: center;
   text-align: center;
 }
 
@@ -35,4 +36,38 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.create-table{
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.create-form{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.submit{
+  margin-top: 5px
+}
+
+li {
+  list-style-type: none;
+  text-decoration: none;
+  
+}
+
+a{
+  text-decoration: none;
+  color: blue;
 }
