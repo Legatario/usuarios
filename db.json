@@ -181,6 +181,12 @@
       "username": "mozilla",
       "password": "akaisaio",
       "id": 17
+    },
+    {
+      "email": "guigui@gmail.com",
+      "username": "guilherme",
+      "password": "puksi",
+      "id": 18
     }
   ]
 }

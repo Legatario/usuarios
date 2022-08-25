@@ -47,15 +47,15 @@ export default function Update() {
             <Form className="create-form">
                  <Form.Field>
                     <label for="username">User Name: </label>
-                    <input id="username" placeholder='username' required onChange={(e) => setUserName(e.target.value)}/>
+                    <input id="username" placeholder='username' value={username} required onChange={(e) => setUserName(e.target.value)}/>
                 </Form.Field>
                 <Form.Field>
                     <label for="email">E-mail: </label>
-                    <input id="email" placeholder='Email'required onChange={(e) => setEmail(e.target.value)}/>
+                    <input id="email" placeholder='Email'required value={email} onChange={(e) => setEmail(e.target.value)}/>
                 </Form.Field>
                 <Form.Field>
                     <label for="password">Password: </label>
-                    <input id="password" placeholder='Password' required onChange={(e) => setPassword(e.target.value)}/>
+                    <input id="password" placeholder='Password' value={password} required onChange={(e) => setPassword(e.target.value)}/>
                 </Form.Field>
                 <Button onClick={updateData} type='submit' className='update'>Update</Button>
             </Form>
