@@ -3,14 +3,16 @@ import { Button, Form} from 'semantic-ui-react';
 
 
 
-
-
 export default function Update() {
+
+    //chamada de variaveis
     
     const [username, setUserName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [id, setID] = useState('');
+
+    //resgatar informação do localStorage de qual usuario foi chamado para fazer as alterações, tbm set nos campos correspondente essas informações usando o value
 
     useEffect(()=>{
         setID(localStorage.getItem('ID'));
@@ -19,6 +21,8 @@ export default function Update() {
         setPassword(localStorage.getItem('password')); 
     },[])
     
+
+    //chamada com o metrod PUT para alterações no backend 
     const updateData = () => {
 
         fetch(`http://localhost:5000/users/${id}`,{
@@ -37,22 +41,23 @@ export default function Update() {
             .then(json=>console.log(json))      
                 
         }
+        // criação de painel para a interação com o usuario
     return (
         <div className="container">
             <Form className="create-form">
-                <Form.Field>
-                    <label>User Name: </label>
-                    <input placeholder='User Name' value={username} onChange={(e) => setUserName(e.target.value)}/>
+                 <Form.Field>
+                    <label for="username">User Name: </label>
+                    <input id="username" placeholder='username' required onChange={(e) => setUserName(e.target.value)}/>
                 </Form.Field>
                 <Form.Field>
-                    <label>E-mail: </label>
-                    <input placeholder='E-mail' value={email} onChange={(e) => setEmail(e.target.value)}/>
+                    <label for="email">E-mail: </label>
+                    <input id="email" placeholder='Email'required onChange={(e) => setEmail(e.target.value)}/>
                 </Form.Field>
                 <Form.Field>
-                    <label>Password: </label>
-                    <input placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)}/>
+                    <label for="password">Password: </label>
+                    <input id="password" placeholder='Password' required onChange={(e) => setPassword(e.target.value)}/>
                 </Form.Field>
-                <Button onClick={updateData} type='submit' className='submit'>Update</Button>
+                <Button onClick={updateData} type='submit' className='update'>Update</Button>
             </Form>
         </div>
        

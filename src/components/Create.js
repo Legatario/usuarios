@@ -4,13 +4,18 @@ import { Button, Form} from 'semantic-ui-react';
 
 
 
+
+
 export default function Create() {
+
+    //variaveis do painel
     
     const [username, setUserName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     
     
+    // chamada para novo usuario  method POST
     const postData = () => {
 
         fetch("http://localhost:5000/users",{
@@ -26,23 +31,26 @@ export default function Create() {
             )
         })
             .then(res=>res.json())
-            .then(json=>console.log(json))      
+            .then(json=>console.log(json))
+             
                 
         }
+
+        // criação de painel para a interação com o usuario
     return (
         <div className="container">
             <Form className="create-form">
                 <Form.Field>
-                    <label>User Name: </label>
-                    <input placeholder='User Name' onChange={(e) => setUserName(e.target.value)}/>
+                    <label for="username">User Name: </label>
+                    <input id="username" placeholder='username' required onChange={(e) => setUserName(e.target.value)}/>
                 </Form.Field>
                 <Form.Field>
-                    <label>E-mail: </label>
-                    <input placeholder='E-mail' onChange={(e) => setEmail(e.target.value)}/>
+                    <label for="email">E-mail: </label>
+                    <input id="email" placeholder='Email'required onChange={(e) => setEmail(e.target.value)}/>
                 </Form.Field>
                 <Form.Field>
-                    <label>Password: </label>
-                    <input placeholder='Password' onChange={(e) => setPassword(e.target.value)}/>
+                    <label for="password">Password: </label>
+                    <input id="password" placeholder='Password' required onChange={(e) => setPassword(e.target.value)}/>
                 </Form.Field>
                 <Button onClick={postData} type='submit' className='submit'>Submit</Button>
             </Form>

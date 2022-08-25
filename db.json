@@ -53,28 +53,6 @@
     {
       "address": {
         "geolocation": {
-          "lat": "40.3467",
-          "long": "-40.1310"
-        },
-        "city": "san Antonio",
-        "street": "adams St",
-        "number": 245,
-        "zipcode": "80796-1234"
-      },
-      "id": 5,
-      "email": "derek@gmail.com",
-      "username": "derek",
-      "password": "jklg*_56",
-      "name": {
-        "firstname": "derek",
-        "lastname": "powell"
-      },
-      "phone": "1-956-001-1945",
-      "__v": 0
-    },
-    {
-      "address": {
-        "geolocation": {
           "lat": "20.1677",
           "long": "-10.6789"
         },
@@ -161,28 +139,6 @@
       "__v": 0
     },
     {
-      "address": {
-        "geolocation": {
-          "lat": "30.24788",
-          "long": "-20.545419"
-        },
-        "city": "fort wayne",
-        "street": "oak lawn ave",
-        "number": 526,
-        "zipcode": "10256-4532"
-      },
-      "id": 10,
-      "email": "jimmie@gmail.com",
-      "username": "jimmie_k",
-      "password": "klein*#%*",
-      "name": {
-        "firstname": "jimmie",
-        "lastname": "klein"
-      },
-      "phone": "1-104-001-4567",
-      "__v": 0
-    },
-    {
       "email": "John@gmail.com",
       "username": "johnd",
       "password": "m38rmF$",
@@ -203,12 +159,6 @@
       "id": 12
     },
     {
-      "email": "ass",
-      "username": "sas",
-      "password": "asasas",
-      "id": 13
-    },
-    {
       "email": "mama@gmail.com",
       "username": "madalena",
       "password": "#ffa4s5as45as",
@@ -227,22 +177,10 @@
       "id": 16
     },
     {
-      "email": "adri@hotmail",
-      "username": "joana",
-      "password": "#ffa4s5a",
+      "email": "momo@gmail.com",
+      "username": "mozilla",
+      "password": "akaisaio",
       "id": 17
-    },
-    {
-      "email": "darksi@hotmail",
-      "username": "dark",
-      "password": "%gasas54as",
-      "id": 18
-    },
-    {
-      "email": "fernanda@hotmail.com",
-      "username": "Fernanda",
-      "password": "somb",
-      "id": 19
     }
   ]
 }
