@@ -68,7 +68,7 @@ Create e Update style  */
   color: #fff;
   cursor: pointer;
   font-size: .9rem;
-  margin-top: 35px;
+  margin-top: 25px;
 }
 
 .update{
@@ -79,7 +79,7 @@ Create e Update style  */
   color: #fff;
   cursor: pointer;
   font-size: 1rem;
-  margin-top: 35px;
+  margin-top: 25px;
 }
 
 .container .field{
@@ -97,7 +97,7 @@ input{
   border: none;
   border-bottom: 2px solid silver;
   font-size: 1rem;
-  min-height: 100%;
+  min-height: 75%;
   min-width: 100%;
 }
 
@@ -111,16 +111,17 @@ input:focus{
   border-color: #d2b569;
 }
 
+input:not(:placeholder-shown){
+  transform: scaleX(1);
+}
+
 .field:focus-within label,
 .field input:-webkit-autofill label{
-  transform:  translateY(-15px) scale(.8);
+  transform:  translateY(-25px) scale(.8);
   color: #d2b569;
 
 }
 
-input:not(:placeholder-shown){
-  transform: scaleX(1);
-}
 
 
 label{
